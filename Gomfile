@@ -1,6 +1,7 @@
 gom 'github.com/markchadwick/morton'
 
 group :test do
+  gom 'github.com/google/gofuzz'
   gom 'github.com/onsi/ginkgo'
   gom 'github.com/onsi/gomega'
 end

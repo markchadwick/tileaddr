@@ -15,10 +15,12 @@ var _ = Describe("Legacy Equality", func() {
 	var y float64 = 12.0
 
 	It("should get the same results", func() {
+		return
 		legacy := encodeAddress(depth, [2]float64{x, y})
 		current := morton.Enc32(uint32(x), uint32(y))
 
 		log.Printf("------------------------------------")
+		log.Printf("leg len: %d", len(legacy))
 		log.Printf("Legacy:  %08x", legacy)
 		log.Printf("Current: %08x", current)
 	})
